@@ -1,0 +1,49 @@
+{
+  "subtitle": "PROFESSIONAL FULL-STACK DEVELOPER",
+  "who_am_i": "Who am I?",
+  "intro": "Hello, my name is Vladislav Rudakevych, I am a professional full-stack developer from Ukraine \uD83C\uDDFA\uD83C\uDDE6. I am building progressive scalable web applications.",
+  "stack": "Stack",
+  "programming_languages": "Programming languages:",
+  "frontend_frameworks": "Frontend frameworks:",
+  "frontend_libraries": "Frontend libraries:",
+  "styles": "Styles:",
+  "backend_frameworks": "Backend frameworks:",
+  "backend_libraries": "Backend libraries:",
+  "databases": "Databases:",
+  "soft_skills_title": "Soft skills:",
+  "soft_skills": [
+    "Creative thinking",
+    "Collaboration",
+    "Enthusiasm",
+    "Conflict resolution",
+    "Patience",
+    "Self-confidence",
+    "Honesty",
+    "Rapid"
+  ],
+  "languages": "Languages:",
+  "ua": "Ukrainian",
+  "ru": "Russian",
+  "en": "English",
+  "de": "German",
+  "native_speaker": "Native",
+  "open_site": "Open site",
+  "post": "Post:",
+  "responsibilities": "Responsibilities:",
+  "company_description": "Company description:",
+  "navigation": {
+    "index": "Index",
+    "about_me": "About me",
+    "contacts": "Contacts"
+  },
+  "company": {
+    "Ficus Life": {
+      "resp": "Creating and maintaining databases, HTML markup creation, developing API, deploying.",
+      "desc": "<p>Ficus Technologies is a 10-year-old international software development and IT recruiting company that develops, produces, and delivers world-class solutions for Fortune 500 companies and promising startups. We provide software development teams made up of the best engineers from across the world.</p><p>Key Clients: Intel, Wix, Coca-Cola, OpenWeb, Vodafone, McDonald’s, Fiverr, Welltory, Dealhub, etc.</p><p>Over 250+ companies have relied on Ficus to develop MVPs, products, and expand engineering teams. You will be proud of your work and achieve your goals when you work with us.</p>"
+    },
+    "Hex-Craft": {
+      "resp": "Creating and maintaining servers, game servers, site and launcher.",
+      "desc": "Hex-Craft is a unique Minecraft project. Main features of this project are services interconnection, gameplay seamlessness and user support as fast as possible."
+    }
+  }
+}
