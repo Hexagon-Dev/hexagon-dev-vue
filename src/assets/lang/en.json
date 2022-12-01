@@ -27,7 +27,7 @@
   "en": "English",
   "de": "German",
   "native_speaker": "Native",
-  "open_site": "Open site",
+  "open_site": "OPEN SITE",
   "post": "Post:",
   "responsibilities": "Responsibilities:",
   "company_description": "Company description:",
@@ -37,11 +37,11 @@
     "contacts": "Contacts"
   },
   "company": {
-    "Ficus Life": {
+    "Ficus Technologies": {
       "resp": "Creating and maintaining databases, HTML markup creation, developing API, deploying.",
-      "desc": "<p>Ficus Technologies is a 10-year-old international software development and IT recruiting company that develops, produces, and delivers world-class solutions for Fortune 500 companies and promising startups. We provide software development teams made up of the best engineers from across the world.</p><p>Key Clients: Intel, Wix, Coca-Cola, OpenWeb, Vodafone, McDonald’s, Fiverr, Welltory, Dealhub, etc.</p><p>Over 250+ companies have relied on Ficus to develop MVPs, products, and expand engineering teams. You will be proud of your work and achieve your goals when you work with us.</p>"
+      "desc": "<p>Ficus Technologies is a software development and IT recruiting company that helps large companies and promising startups bring ideas of any size to life.</p><p>The company is trusted by over 250+ companies worldwide and provides expert services for building MVPs, developing software products from scratch, and scaling teams. We form a flexible pipeline that adapts to the needs of the individual client to deliver a result that allows you to achieve all your business goals.</p>"
     },
-    "Hex-Craft": {
+    "hexCraft": {
       "resp": "Creating and maintaining servers, game servers, site and launcher.",
       "desc": "Hex-Craft is a unique Minecraft project. Main features of this project are services interconnection, gameplay seamlessness and user support as fast as possible."
     }

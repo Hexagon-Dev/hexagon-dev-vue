@@ -12,7 +12,6 @@
         <button
           @click.prevent.stop="changeLocale(locale)"
           :class="{ 'active': $i18n.locale === locale }"
-          class="button"
           :key="locale"
           v-for="locale in $i18n.availableLocales"
         >

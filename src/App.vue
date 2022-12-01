@@ -20,17 +20,17 @@ export default {
     return {
       companies: [
         {
-          backgroundColor: 'white',
-          contentColor: '#0D9F81',
-          title: 'Ficus Life',
-          link: 'https://ficuslife.com',
+          backgroundColor: '#181A1B',
+          contentColor: 'linear-gradient(90deg, rgb(27,44,24) 0%, rgb(25,42,50) 100%)',
+          title: 'Ficus Technologies',
+          link: 'https://ficustechnologies.com',
           linkColor: '#138570',
           post: 'Full-Stack Developer',
         },
         {
-          backgroundColor: '#999',
-          contentColor: '#333',
-          title: 'Hex-Craft',
+          backgroundColor: '#333',
+          contentColor: 'linear-gradient(90deg, #6B72B5 0%, #68B2BC 100%)',
+          title: 'hexCraft',
           link: '#',
           linkColor: '#444',
           post: 'Creator, Main Administrator',

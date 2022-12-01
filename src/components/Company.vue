@@ -21,7 +21,7 @@ defineProps({
       <div v-animate-on-scroll class="title-container">
         <h2>{{ company.title }}</h2>
 
-        <a :href="company.link" v-t="'open_site'" class="btn-link" />
+        <a :href="company.link" target="_blank" v-t="'open_site'" class="btn-link" />
       </div>
 
       <div v-animate-on-scroll>
