@@ -33,7 +33,7 @@
 
         <div v-animate-on-scroll>
           <h3 v-t="'backend_frameworks'"/>
-          <span class="text-light">Laravel, Lumen.</span>
+          <span class="text-light">Laravel, Lumen, Symfony.</span>
         </div>
 
         <div v-animate-on-scroll>
