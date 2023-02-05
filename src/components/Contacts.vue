@@ -4,6 +4,10 @@
       <svg class="contact-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m511 387-23 101c-3 14-16 24-31 24A458 458 0 0 1 0 55c0-15 10-28 24-31L125 1c15-4 30 4 36 18l46 108c6 13 2 28-9 37l-53 43c33 69 90 126 159 160l44-54c9-11 24-15 37-9l108 46c13 7 22 22 18 37z"/></svg>
       <span class="contact-text">+38(066)695-37-45</span>
     </a>
+    <a href="mailto:hexagon.dev.ua@gmail.com" target="_blank" v-animate-on-scroll>
+      <svg class="contact-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64a48 48 0 0 0-29 86l218 164c11 8 27 8 38 0l218-164a48 48 0 0 0-29-86H48zM0 176v208c0 35 29 64 64 64h384c35 0 64-29 64-64V176L294 339a64 64 0 0 1-76 0L0 176z"/></svg>
+      <span class="contact-text">hexagon.dev.ua@gmail.com</span>
+    </a>
     <a href="https://t.me/HexagonDeveloper" target="_blank" v-animate-on-scroll>
       <svg class="contact-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M248 8a248 248 0 1 0 0 496 248 248 0 0 0 0-496Zm115 169c-4 39-20 134-28 178-4 19-10 25-17 25-14 2-25-9-39-18l-56-37c-24-17-8-25 6-40 3-4 67-61 68-67l-1-4-5-1q-4 1-105 70-15 10-27 9c-9 0-26-5-38-9-16-5-28-7-27-16q1-7 18-14l145-62c69-29 83-34 92-34 2 0 7 1 10 3a10 10 0 0 1 4 7 44 44 0 0 1 0 10Z"/></svg>
       <span class="contact-text">@HexagonDeveloper</span>

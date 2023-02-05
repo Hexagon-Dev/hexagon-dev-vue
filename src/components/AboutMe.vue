@@ -3,13 +3,13 @@
     <div class="grid">
       <div class="pad" v-animate-on-scroll>
         <div class="pad__body">
-          <h3 v-t="'who_am_i'" />
-          <p style="margin: 0;" v-t="'intro'"/>
+          <h3 v-t="'who_am_i'"/>
+          <p style="margin: 0;" class="intro" v-t="'intro'"/>
         </div>
       </div>
 
-      <div class="about-col stack" v-animate-on-scroll>
-        <h2 v-t="'stack'" class="cyberpunk"/>
+      <div class="about-col stack">
+        <h2 v-animate-on-scroll v-t="'stack'"/>
 
         <div v-animate-on-scroll>
           <h3 v-t="'programming_languages'"/>
@@ -23,12 +23,12 @@
 
         <div v-animate-on-scroll>
           <h3 v-t="'frontend_libraries'"/>
-          <span class="text-light">Axios, Date-fns, VeeValidate, Markdownit, Pusher-js, TipTap editor, Vuex, I18n...</span>
+          <span class="text-light">Axios, Date-fns, VeeValidate, Markdownit, Pusher-js, TipTap, Vuex, I18n, jQuery...</span>
         </div>
 
         <div v-animate-on-scroll>
           <h3 v-t="'styles'"/>
-          <span class="text-light">CSS, SASS, Tailwind CSS.</span>
+          <span class="text-light">CSS, SASS, Tailwind CSS, Bootstrap, Buefy.</span>
         </div>
 
         <div v-animate-on-scroll>
@@ -38,12 +38,12 @@
 
         <div v-animate-on-scroll>
           <h3 v-t="'backend_libraries'"/>
-          <span class="text-light">Laravel Passport, Laravel-Permission, Westacks Telebot, JSON RPC, Behat, SumSub API...</span>
+          <span class="text-light">Laravel Passport, JSON RPC, Behat, SumSub API, Sentry, Telescope...</span>
         </div>
 
         <div v-animate-on-scroll>
-          <h3 v-t="'databases'"/>
-          <span class="text-light">MySQL, Redis.</span>
+          <h3 v-t="'others'"/>
+          <span class="text-light">Linux, Docker, Docker-Compose, Nginx, AWS, Makefile, Composer, NPM, YARN, MySQL, Redis, GitHub, GitLab, BitBucket, Jira, Scrum.</span>
         </div>
       </div>
 
@@ -51,6 +51,16 @@
         <h2 v-t="'soft_skills_title'"/>
         <ul class="text-light">
           <li v-for="skill in Array.from(Array(8).keys())" v-t="`soft_skills.${skill}`"/>
+        </ul>
+      </div>
+
+      <div class="about-col" v-animate-on-scroll>
+        <h2 v-t="'principles_title'"/>
+        <ul class="text-light">
+          <li>DRY</li>
+          <li>KISS</li>
+          <li>YAGNI</li>
+          <li>SOLID</li>
         </ul>
       </div>
 

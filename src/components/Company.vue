@@ -21,16 +21,18 @@ defineProps({
       <div v-animate-on-scroll class="title-container">
         <h2>{{ company.title }}</h2>
 
-        <a :href="company.link" target="_blank" v-t="'open_site'" class="btn-link" />
+        <a :href="company.link" target="_blank" v-t="'open_site'" class="btn-link"/>
       </div>
 
       <div v-animate-on-scroll>
-        <h3 v-t="'post'" />
+        <h3 v-t="'post'"/>
         <p>{{ company.post }}</p>
-        <h3 v-t="'responsibilities'" />
-        <p v-t="`company.${company.title}.resp`" />
-        <h3 v-t="'company_description'" />
-        <p v-html="$t(`company.${company.title}.desc`)" />
+        <h3 v-t="'term'"/>
+        <p>{{ company.term }}</p>
+        <h3 v-t="'responsibilities'"/>
+        <p v-t="`company.${company.title}.resp`"/>
+        <h3 v-t="'company_description'"/>
+        <p v-html="$t(`company.${company.title}.desc`)"/>
       </div>
     </div>
   </section>

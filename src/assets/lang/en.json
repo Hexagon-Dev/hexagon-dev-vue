@@ -1,7 +1,7 @@
 {
   "subtitle": "PROFESSIONAL FULL-STACK DEVELOPER",
   "who_am_i": "Who am I?",
-  "intro": "Hello, my name is Vladislav Rudakevych, I am a professional full-stack developer from Ukraine \uD83C\uDDFA\uD83C\uDDE6. I am building progressive scalable web applications.",
+  "intro": "Hello, my name is Vladislav Rudakevych, I am a professional full-stack developer from Ukraine \uD83C\uDDFA\uD83C\uDDE6 with more than 3 years of experience in web-developing, equipped with a diverse and promising skill-set. Able to effectively self-manage various issues, as well as collaborate as part of a productive team. My main responsibility is to develop high-load and user-friendly systems folowing best practises. Proficient in various frameworks, libraries and embedded systems. I am always engaged in learning new skills.",
   "stack": "Stack",
   "programming_languages": "Programming languages:",
   "frontend_frameworks": "Frontend frameworks:",
@@ -9,7 +9,7 @@
   "styles": "Styles:",
   "backend_frameworks": "Backend frameworks:",
   "backend_libraries": "Backend libraries:",
-  "databases": "Databases:",
+  "others": "Others:",
   "soft_skills_title": "Soft skills:",
   "soft_skills": [
     "Creative thinking",
@@ -21,6 +21,7 @@
     "Honesty",
     "Rapid"
   ],
+  "principles_title": "Principles",
   "languages": "Languages:",
   "ua": "Ukrainian",
   "ru": "Russian",
@@ -29,6 +30,7 @@
   "native_speaker": "Native",
   "open_site": "OPEN SITE",
   "post": "Post:",
+  "term": "Term:",
   "responsibilities": "Responsibilities:",
   "company_description": "Company description:",
   "navigation": {

@@ -31,15 +31,15 @@ const animateOnScrollObserver = new IntersectionObserver(
                 entry.target.classList.add('enter')
                 animateOnScrollObserver.unobserve(entry.target)
             }
-        })
-    }
+        });
+    },
 );
 
 app.directive('animate-on-scroll', {
     beforeMount: el => {
         el.classList.add('before-enter')
         animateOnScrollObserver.observe(el)
-    }
+    },
 });
 
 app.mount('#app');

@@ -7,10 +7,10 @@
 
 <template>
   <div>
-    <nick-name />
-    <about-me />
-    <company v-for="company in companies" :key="company.logo" :company="company" />
-    <contacts />
+    <nick-name/>
+    <about-me/>
+    <company v-for="company in companies" :key="company.logo" :company="company"/>
+    <contacts/>
   </div>
 </template>
 
@@ -26,6 +26,7 @@ export default {
           link: 'https://ficustechnologies.com',
           linkColor: '#138570',
           post: 'Full-Stack Developer',
+          term: '10.2021 - Now',
         },
         {
           backgroundColor: '#333',
@@ -34,6 +35,7 @@ export default {
           link: '#',
           linkColor: '#444',
           post: 'Creator, Main Administrator',
+          term: '07.2020 - 03.2022',
         },
       ],
     };

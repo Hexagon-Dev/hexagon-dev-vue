@@ -1,6 +1,6 @@
 <template>
   <section class="block main">
-    <div class="renderable" ref="renderable" />
+    <div class="renderable" ref="renderable"/>
     <transition>
       <div v-if="!rotating" class="name-container">
         <h1 class="name">HEXAGON-DEV</h1>
@@ -19,7 +19,9 @@
         </button>
       </div>
     </transition>
-    <div class="scroll-div" />
+    <div class="scroll-div">
+      <img class="handle" src="/handle.svg" alt="Handle">
+    </div>
   </section>
 </template>
 
@@ -39,9 +41,7 @@ import { MeshNormalMaterial } from 'three/src/materials/MeshNormalMaterial.js';
 
 export default {
   data() {
-    return {
-      rotating: false,
-    };
+    return { rotating: false };
   },
   methods: {
     animate() {
@@ -72,8 +72,7 @@ export default {
     this.scene.add(this.light);
 
     const geometry = new TorusGeometry(30, 5, 3, 6);
-    const material = new MeshNormalMaterial();
-    this.hexagon = new Mesh( geometry, material );
+    this.hexagon = new Mesh( geometry, new MeshNormalMaterial() );
     this.scene.add(this.hexagon);
 
     this.orbit = new OrbitControls(this.camera, this.renderer.domElement);
@@ -103,13 +102,13 @@ export default {
 
     this.animate();
 
-    window.addEventListener( 'resize', () => {
+    window.addEventListener('resize', () => {
       this.camera.aspect = window.innerWidth / window.innerHeight;
       this.camera.updateProjectionMatrix();
 
       this.renderer.setSize(window.innerWidth, window.innerHeight);
       this.composer.setSize(window.innerWidth, window.innerHeight);
-    }, false );
-  }
-}
+    }, false);
+  },
+};
 </script>
