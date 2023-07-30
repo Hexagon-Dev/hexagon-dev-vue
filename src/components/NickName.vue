@@ -1,6 +1,6 @@
 <template>
   <section class="block main">
-    <div class="renderable" ref="renderable"/>
+    <div :style="[ rotating ? 'opacity: 1;' : 'opacity: .5;' ]" class="renderable" ref="renderable"/>
     <transition>
       <div v-if="!rotating" class="name-container">
         <h1 class="name">HEXAGON-DEV</h1>

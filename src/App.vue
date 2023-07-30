@@ -6,12 +6,10 @@
 </script>
 
 <template>
-  <div>
-    <nick-name/>
-    <about-me/>
-    <company v-for="company in companies" :key="company.logo" :company="company"/>
-    <contacts/>
-  </div>
+  <nick-name/>
+  <about-me/>
+  <company v-for="company in companies" :key="company.logo" :company="company"/>
+  <contacts/>
 </template>
 
 <script>
