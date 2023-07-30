@@ -26,7 +26,6 @@
   "ua": "Ukrainian",
   "ru": "Russian",
   "en": "English",
-  "de": "German",
   "native_speaker": "Native",
   "open_site": "OPEN SITE",
   "post": "Post:",
@@ -46,6 +45,10 @@
     "hexCraft": {
       "resp": "Creating and maintaining servers, game servers, site and launcher.",
       "desc": "Hex-Craft is a unique Minecraft project. Main features of this project are services interconnection, gameplay seamlessness and user support as fast as possible."
+    },
+    "Egregor": {
+      "resp": "Creating project from scratch. Developing frontend and backend, deploying.",
+      "desc": "Egregor AI Chat-Bot is a smart chat bot based on OpenAI API. It can answer any question and even make a conversation with you. Has Text2Speech feature."
     }
   }
 }

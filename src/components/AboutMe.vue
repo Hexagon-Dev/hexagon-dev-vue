@@ -23,12 +23,12 @@
 
         <div v-animate-on-scroll>
           <h3 v-t="'frontend_libraries'"/>
-          <span class="text-light">Axios, Date-fns, VeeValidate, Markdownit, Pusher-js, TipTap, Vuex, I18n, jQuery...</span>
+          <span class="text-light">Axios, Date-fns, VeeValidate, Markdownit, Pusher-js, TipTap, Vuex, I18n...</span>
         </div>
 
         <div v-animate-on-scroll>
           <h3 v-t="'styles'"/>
-          <span class="text-light">CSS, SASS, Tailwind CSS, Bootstrap, Buefy.</span>
+          <span class="text-light">CSS, SASS, Tailwind CSS, Bootstrap, Buefy, Vuetify.</span>
         </div>
 
         <div v-animate-on-scroll>
@@ -38,12 +38,12 @@
 
         <div v-animate-on-scroll>
           <h3 v-t="'backend_libraries'"/>
-          <span class="text-light">Laravel Passport, JSON RPC, Behat, SumSub API, Sentry, Telescope...</span>
+          <span class="text-light">Laravel Passport, JSON RPC, Behat, Scribe, SumSub API, ModernMT API, Sentry, Telescope...</span>
         </div>
 
         <div v-animate-on-scroll>
           <h3 v-t="'others'"/>
-          <span class="text-light">Linux, Docker, Docker-Compose, Nginx, AWS, Makefile, Composer, NPM, YARN, MySQL, Redis, GitHub, GitLab, BitBucket, Jira, Scrum.</span>
+          <span class="text-light">OpenAI, Linux, Docker, Docker-Compose, Nginx, AWS, Makefile, Composer, NPM, YARN, MySQL, Redis, GitHub, GitLab, BitBucket, Jira, Scrum.</span>
         </div>
       </div>
 
@@ -69,7 +69,6 @@
         <h3>{{ $t('ua') }} <span class="badge" v-t="'native_speaker'"/></h3>
         <h3>{{ $t('ru') }} <span class="badge" v-t="'native_speaker'"/></h3>
         <h3>{{ $t('en') }} <span class="badge">B2</span></h3>
-        <h3>{{ $t('de') }} <span class="badge">A1</span></h3>
       </div>
     </div>
   </section>
