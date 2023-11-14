@@ -2,4 +2,4 @@
 
 Personal site done using Vue 3 and Three.js
 
-https://hexagon-dev.com.ua
+https://hexdev.me
