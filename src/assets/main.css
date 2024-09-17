@@ -72,29 +72,13 @@ li {
 }
 
 .pad {
-  box-shadow: white 0 8px 24px;
   position: relative;
   max-width: 800px;
   grid-column: 1 / span 2;
   background-color: black;
   border: 2px solid white;
-  clip-path: polygon( 0 0, 100% 0, 100% calc(100% - 1rem + 2px), calc(100% - 1rem + 2px) 100%, 0 100% );
   margin-bottom: 20px;
-}
-.pad__body {
   padding: 1rem;
-}
-.pad::before {
-  background-color: white;
-  bottom: 4px;
-  content: "";
-  display: block;
-  height: 3px;
-  position: absolute;
-  right: -3px;
-  transform: rotate(-45deg);
-  width: 1rem;
-  z-index: 100;
 }
 
 .block {
@@ -154,10 +138,6 @@ li {
 .handle {
   display: none;
 }
-.about {
-  color: white;
-  height: 1100px;
-}
 .grid {
   display: grid;
   grid-template-columns: auto auto;
@@ -169,6 +149,10 @@ li {
 }
 .stack {
   grid-row: 2 / 5;
+  align-self: baseline;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .intro {
   font-size: 1.25rem;
@@ -193,7 +177,7 @@ li {
 .before-enter {
   opacity: 0;
   transform: translateY(150px);
-  transition: all 1.3s ease;
+  transition: all 1s ease;
 }
 ::selection {
   background: #999;
@@ -331,6 +315,39 @@ li {
   opacity: 0;
 }
 
+.projects-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 800px;
+}
+
+.project {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border: 1px solid white;
+}
+
+.project > .icon-container {
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  width: 5rem;
+  flex: none;
+  position: relative;
+  padding: 1rem;
+}
+
+.project > .icon-container > svg {
+  height: 100%;
+  width: 100%;
+}
+
 @media only screen and (max-width: 1280px) {
   .company > .content {
     padding-right: 32px;
@@ -357,6 +374,9 @@ li {
   }
   .about-col {
     max-width: 100%;
+  }
+  .projects-wrap {
+    grid-template-columns: 1fr;
   }
   .btn-link {
     width: 100%;

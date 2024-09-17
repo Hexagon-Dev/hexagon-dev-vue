@@ -1,3 +1,19 @@
+<script setup>
+const contacts = {
+  phone: { text: '+380666953745', copied: false },
+  email: { text: 'hexagon.dev.ua@gmail.com', copied: false },
+  telegram: { text: '@HexagonDeveloper', copied: false },
+  git: { text: 'https://github.com/Hexagon-Dev', copied: false },
+  discord: { text: '@hexagondev', copied: false },
+};
+
+function copy(contact) {
+  navigator.clipboard.writeText(contact.text);
+
+  contact.copied = true;
+}
+</script>
+
 <template>
   <section class="contacts">
     <div v-animate-on-scroll>
@@ -61,27 +77,3 @@
     </div>
   </section>
 </template>
-
-<script>
-export default {
-  name: 'ContactsComponent',
-  data() {
-    return {
-      contacts: {
-        phone: { text: '+380666953745', copied: false },
-        email: { text: 'hexagon.dev.ua@gmail.com', copied: false },
-        telegram: { text: '@HexagonDeveloper', copied: false },
-        git: { text: 'https://github.com/Hexagon-Dev', copied: false },
-        discord: { text: '@hexagondev', copied: false },
-      }
-    };
-  },
-  methods: {
-    copy(contact) {
-      navigator.clipboard.writeText(contact.text);
-
-      contact.copied = true;
-    },
-  },
-};
-</script>
