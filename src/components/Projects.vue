@@ -6,27 +6,54 @@ const svgIcons = [
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 267c-26 9-54 14-81 15 9-105-32-204-103-272a256 256 0 0 1 184 246v11zm-4 35c-6 32-18 62-34 89-98 48-218 42-312-25 24-36 55-67 94-92 80 44 170 51 252 28zm-236-55c-3-91-41-173-102-232a252 252 0 0 1 94-15c91 60 146 167 135 282-44-2-87-14-127-35zM138 29c21 18 39 39 54 62A336 336 0 0 0 7 317 255 255 0 0 1 138 29zm70 90c19 39 31 82 32 128A335 335 0 0 0 90 451c-24-21-44-46-60-74 7-109 72-210 178-258zm48 393c-51 0-98-15-138-40 6-27 15-53 28-78 86 61 192 75 287 47-46 44-108 71-177 71z"/></svg>',
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M0 24C0 11 11 0 24 0h46c22 0 41 13 50 32h411c26 0 46 25 39 50l-41 153c-9 31-37 53-70 53H171l5 29c2 11 12 19 24 19h288a24 24 0 1 1 0 48H200c-35 0-65-25-71-58L77 55c0-4-4-7-7-7H24C11 48 0 37 0 24zm128 440a48 48 0 1 1 96 0 48 48 0 1 1-96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>',
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M128 0c18 0 32 14 32 32v32h128V32a32 32 0 1 1 64 0v32h48c27 0 48 22 48 48v48H0v-48c0-26 22-48 48-48h48V32c0-18 14-32 32-32zM0 192h448v272c0 27-21 48-48 48H48c-26 0-48-21-48-48V192zm64 80v32c0 9 7 16 16 16h32c9 0 16-7 16-16v-32c0-9-7-16-16-16H80c-9 0-16 7-16 16zm128 0v32c0 9 7 16 16 16h32c9 0 16-7 16-16v-32c0-9-7-16-16-16h-32c-9 0-16 7-16 16zm144-16c-9 0-16 7-16 16v32c0 9 7 16 16 16h32c9 0 16-7 16-16v-32c0-9-7-16-16-16h-32zM64 400v32c0 9 7 16 16 16h32c9 0 16-7 16-16v-32c0-9-7-16-16-16H80c-9 0-16 7-16 16zm144-16c-9 0-16 7-16 16v32c0 9 7 16 16 16h32c9 0 16-7 16-16v-32c0-9-7-16-16-16h-32zm112 16v32c0 9 7 16 16 16h32c9 0 16-7 16-16v-32c0-9-7-16-16-16h-32c-9 0-16 7-16 16z"/></svg>',
-]
+];
+
+const projects = [
+  {
+    'title': 'Learning Platform',
+    'description': 'Admin-created content distribution system via different messengers.',
+  },
+  {
+    'title': 'Healthcare App',
+    'description': 'Application for children\' parents to track appointments, vaccinations, and other health-related data.',
+  },
+  {
+    'title': 'Job Search Platform',
+    'description': 'Platform for job seekers and employers to find each other.',
+  },
+  {
+    'title': 'Sport Clubs Control Panel',
+    'description': 'Panel for managing club members, events, finances and much more.',
+  },
+  {
+    'title': 'Shop Management',
+    'description': 'System for managing white-labels, shop products, orders, customers and other.',
+  },
+  {
+    'title': 'Social Network Scheduler',
+    'description': 'Application for scheduling posts in social networks.',
+  },
+];
 </script>
 
 <template>
   <section class="block" style="flex-direction: column; color: white; gap: 1rem; padding: 1rem;">
-    <h2 v-t="'projects_title'" v-animate-on-scroll style="margin-bottom: 2rem; font-size: 36px;" />
+    <h2 v-animate-on-scroll style="margin-bottom: 2rem; font-size: 36px;">Projects I worked on</h2>
 
     <div class="projects-wrap">
       <div
-          v-for="i in 6"
+          v-for="(project, i) in projects"
           :key="i"
           class="project"
           v-animate-on-scroll
           :data-delay="i % 2 === 0 ? 200 : 0"
       >
-        <div class="icon-container" v-html="svgIcons[i - 1]" />
+        <div class="icon-container" v-html="svgIcons[i]" />
 
         <div>
-          <h3>{{ $t(`projects.${i - 1}.title`) }}</h3>
+          <h3>{{ project.title }}</h3>
 
-          <span v-t="`projects.${i - 1}.description`" style="font-weight: 100" />
+          <span style="font-weight: 100">{{ project.description }}</span>
         </div>
       </div>
     </div>

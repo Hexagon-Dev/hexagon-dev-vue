@@ -4,32 +4,18 @@
     <transition>
       <div v-if="!rotating" class="name-container">
         <h1 class="name">HEXAGON-DEV</h1>
-        <h2 class="subname">{{ $t('subtitle').toString() }}</h2>
-      </div>
-    </transition>
-
-    <transition>
-      <div v-if="!rotating" class="locales">
-        <button
-          @click.prevent.stop="changeLocale(loc)"
-          :class="{ 'active': locale === loc }"
-          :key="loc"
-          v-for="loc in availableLocales"
-        >
-          {{ loc.toUpperCase() }}
-        </button>
+        <h2 class="subname">FULL-STACK DEVELOPER</h2>
       </div>
     </transition>
 
     <div class="scroll-div">
-      <img class="handle" src="/handle.svg" alt="Handle">
+      <svg class="handle" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 448 512"><path d="M32 288a32 32 0 1 0 0 64h384a32 32 0 1 0 0-64H32zm0-128a32 32 0 1 0 0 64h384a32 32 0 1 0 0-64H32z"/></svg>
     </div>
   </section>
 </template>
 
 <script setup>
 import { onMounted, ref } from 'vue';
-import { useI18n } from 'vue-i18n';
 import { WebGLRenderer } from 'three/src/renderers/WebGLRenderer';
 import { PerspectiveCamera } from 'three/src/cameras/PerspectiveCamera';
 import { Scene } from 'three/src/scenes/Scene';
@@ -45,20 +31,10 @@ import { EffectComposer } from 'three/addons/postprocessing/EffectComposer';
 
 const rotating = ref(false);
 
-const { locale, availableLocales } = useI18n();
-
 function animate() {
   requestAnimationFrame(animate);
   orbit.update();
   composer.render();
-}
-
-function changeLocale(loc) {
-  if (locale.value === loc) {
-    return;
-  }
-
-  locale.value = loc;
 }
 
 const renderer = new WebGLRenderer();
@@ -101,7 +77,5 @@ window.addEventListener('resize', () => {
   composer.setSize(window.innerWidth, window.innerHeight);
 }, false);
 
-onMounted(() => {
-  document.getElementById('renderable').appendChild(renderer.domElement);
-});
+onMounted(() => document.getElementById('renderable').appendChild(renderer.domElement));
 </script>

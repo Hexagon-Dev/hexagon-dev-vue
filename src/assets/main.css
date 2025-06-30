@@ -98,33 +98,6 @@ li {
   color: white;
   z-index: 5;
 }
-.locales {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: white;
-  font-size: 24px;
-  margin: 30px;
-  z-index: 50;
-  border: 1px solid white;
-}
-.locales > button {
-  display: block;
-  text-decoration: none;
-  padding: 20px;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  border-bottom: 1px solid white;
-}
-.locales > button:last-child {
-  border: none;
-}
-.locales > .active {
-  background-color: white;
-  color: black;
-  cursor: default;
-}
 .scroll-div {
   display: flex;
   justify-content: center;
@@ -309,19 +282,16 @@ li {
 .v-leave-active {
   transition: opacity .3s;
 }
-
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
 }
-
 .projects-wrap {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   max-width: 800px;
 }
-
 .project {
   padding: 2rem;
   display: flex;
@@ -329,7 +299,6 @@ li {
   gap: 2rem;
   border: 1px solid white;
 }
-
 .project > .icon-container {
   background: white;
   color: black;
@@ -342,7 +311,6 @@ li {
   position: relative;
   padding: 1rem;
 }
-
 .project > .icon-container > svg {
   height: 100%;
   width: 100%;

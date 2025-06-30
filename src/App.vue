@@ -13,6 +13,8 @@
       link: 'https://ficustechnologies.com',
       post: 'Full-Stack Developer',
       term: '10.2021 - Now',
+      responsibilities: 'Creating and maintaining databases, HTML markup creation, developing API, deploying.',
+      description: '<p>Ficus Technologies is a software development and IT recruiting company that helps large companies and promising startups bring ideas of any size to life.</p><p>The company is trusted by over 250+ companies worldwide and provides expert services for building MVPs, developing software products from scratch, and scaling teams. We form a flexible pipeline that adapts to the needs of the individual client to deliver a result that allows you to achieve all your business goals.</p>',
     },
     {
       backgroundColor: '#333',
@@ -20,13 +22,8 @@
       title: 'hexCraft',
       post: 'Creator, Main Administrator',
       term: '07.2020 - 03.2022',
-    },
-    {
-      backgroundColor: '#000',
-      contentColor: 'linear-gradient(90deg, #573F00 0%, #000 100%)',
-      title: 'Egregor',
-      post: 'Full-Stack Developer',
-      term: '03.2023 - 04.2023',
+      responsibilities: 'Creating and maintaining servers, game servers, site and launcher.',
+      description: 'Hex-Craft is a unique Minecraft project. Main features of this project are services interconnection, gameplay seamlessness and user support as fast as possible.',
     },
   ];
 </script>

@@ -1,6 +1,6 @@
 <script setup>
 const contacts = {
-  phone: { text: '+380666953745', copied: false },
+  phone: { text: '+731592388', copied: false },
   email: { text: 'hexagon.dev.ua@gmail.com', copied: false },
   telegram: { text: '@HexagonDeveloper', copied: false },
   git: { text: 'https://github.com/Hexagon-Dev', copied: false },
@@ -17,9 +17,9 @@ function copy(contact) {
 <template>
   <section class="contacts">
     <div v-animate-on-scroll>
-      <a href="tel:+380666953745" target="_blank">
+      <a href="tel:+731592388" target="_blank">
         <svg class="contact-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m511 387-23 101c-3 14-16 24-31 24A458 458 0 0 1 0 55c0-15 10-28 24-31L125 1c15-4 30 4 36 18l46 108c6 13 2 28-9 37l-53 43c33 69 90 126 159 160l44-54c9-11 24-15 37-9l108 46c13 7 22 22 18 37z"/></svg>
-        <span class="contact-text">+38(066)695-37-45</span>
+        <span class="contact-text">+48-731-592-388</span>
       </a>
 
       <button @click="copy(contacts.phone)">

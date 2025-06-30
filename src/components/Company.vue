@@ -11,12 +11,12 @@ defineProps({
   <section class="block company" :style="`background: ${company.backgroundColor}`">
     <div class="logo-container">
       <img
-        v-if="company.title !== 'Learning'"
         v-animate-on-scroll
         :src="`/${company.title}.svg`"
         :alt="company.title"
       >
     </div>
+
     <div class="block content" :style="`background: ${company.contentColor}`">
       <div v-animate-on-scroll class="title-container">
         <h2>{{ company.title }}</h2>
@@ -25,20 +25,21 @@ defineProps({
           v-if="company.link"
           :href="company.link"
           target="_blank"
-          v-t="'open_site'"
           class="btn-link"
-        />
+        >
+          OPEN SITE
+        </a>
       </div>
 
       <div v-animate-on-scroll>
-        <h3 v-t="'post'"/>
+        <h3>Post:</h3>
         <p>{{ company.post }}</p>
-        <h3 v-t="'term'"/>
+        <h3>Term:</h3>
         <p>{{ company.term }}</p>
-        <h3 v-t="'responsibilities'"/>
-        <p v-t="`company.${company.title}.resp`"/>
-        <h3 v-t="'company_description'"/>
-        <p v-html="$t(`company.${company.title}.desc`)"/>
+        <h3>Responsibilities:</h3>
+        <p>{{ company.responsibilities }}</p>
+        <h3>Company description:</h3>
+        <p v-html="company.description"/>
       </div>
     </div>
   </section>

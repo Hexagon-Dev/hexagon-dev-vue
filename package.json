@@ -1,10 +1,11 @@
 {
   "name": "hexagon-dev-vue",
-  "version": "1.0.1",
+  "type": "module",
+  "version": "1.0.2",
   "author": {
     "name": "Vladyslav Rudakevych",
     "email": "hexagon.dev.ua@gmail.com",
-    "url": "https://hexagon-dev.com.ua"
+    "url": "https://hexdev.me"
   },
   "web-types": "./webtypes.json",
   "scripts": {
@@ -14,11 +15,10 @@
   },
   "dependencies": {
     "three": "^0.144.0",
-    "vue": "^3.2.38",
-    "vue-i18n": "^9.2.2"
+    "vue": "^3.2.38"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^3.0.3",
-    "vite": "^3.0.9"
+    "@vitejs/plugin-vue": "^6.0.0",
+    "vite": "^7.0.0"
   }
 }
