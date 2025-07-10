@@ -222,7 +222,7 @@ li {
   flex: none;
 }
 .contact-text {
-  padding-left: 16px;
+  padding: 0 16px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

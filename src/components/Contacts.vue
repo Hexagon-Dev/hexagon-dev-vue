@@ -1,16 +1,20 @@
 <script setup>
-const contacts = {
+import { ref } from 'vue';
+
+const contacts = ref({
   phone: { text: '+731592388', copied: false },
   email: { text: 'hexagon.dev.ua@gmail.com', copied: false },
   telegram: { text: '@HexagonDeveloper', copied: false },
   git: { text: 'https://github.com/Hexagon-Dev', copied: false },
   discord: { text: '@hexagondev', copied: false },
-};
+});
 
 function copy(contact) {
   navigator.clipboard.writeText(contact.text);
 
   contact.copied = true;
+
+  setTimeout(() => contact.copied = false, 1000);
 }
 </script>
 
@@ -22,7 +26,7 @@ function copy(contact) {
         <span class="contact-text">+48-731-592-388</span>
       </a>
 
-      <button @click="copy(contacts.phone)">
+      <button @click="copy(contacts.phone)" aria-label="Copy phone number">
         <svg v-if="!contacts.phone.copied" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M272 0h124c13 0 25 5 34 14l68 68c9 9 14 21 14 34v220c0 27-21 48-48 48H272c-26 0-48-21-48-48V48c0-26 22-48 48-48zM48 128h144v64H64v256h192v-32h64v48c0 27-21 48-48 48H48c-26 0-48-21-48-48V176c0-26 22-48 48-48z"/></svg>
         <svg v-else fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439 105c12 13 12 33 0 46L183 407a32 32 0 0 1-46 0L9 279a32 32 0 0 1 46-46l105 106 233-234c13-12 33-12 46 0z"/></svg>
       </button>
@@ -34,7 +38,7 @@ function copy(contact) {
         <span class="contact-text">hexagon.dev.ua@gmail.com</span>
       </a>
 
-      <button @click="copy(contacts.email)">
+      <button @click="copy(contacts.email)" aria-label="Copy email">
         <svg v-if="!contacts.email.copied" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M272 0h124c13 0 25 5 34 14l68 68c9 9 14 21 14 34v220c0 27-21 48-48 48H272c-26 0-48-21-48-48V48c0-26 22-48 48-48zM48 128h144v64H64v256h192v-32h64v48c0 27-21 48-48 48H48c-26 0-48-21-48-48V176c0-26 22-48 48-48z"/></svg>
         <svg v-else fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439 105c12 13 12 33 0 46L183 407a32 32 0 0 1-46 0L9 279a32 32 0 0 1 46-46l105 106 233-234c13-12 33-12 46 0z"/></svg>
       </button>
@@ -46,7 +50,7 @@ function copy(contact) {
         <span class="contact-text">@HexagonDeveloper</span>
       </a>
 
-      <button @click="copy(contacts.telegram)">
+      <button @click="copy(contacts.telegram)" aria-label="Copy telegram nickname">
         <svg v-if="!contacts.telegram.copied" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M272 0h124c13 0 25 5 34 14l68 68c9 9 14 21 14 34v220c0 27-21 48-48 48H272c-26 0-48-21-48-48V48c0-26 22-48 48-48zM48 128h144v64H64v256h192v-32h64v48c0 27-21 48-48 48H48c-26 0-48-21-48-48V176c0-26 22-48 48-48z"/></svg>
         <svg v-else fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439 105c12 13 12 33 0 46L183 407a32 32 0 0 1-46 0L9 279a32 32 0 0 1 46-46l105 106 233-234c13-12 33-12 46 0z"/></svg>
       </button>
@@ -58,7 +62,7 @@ function copy(contact) {
         <span class="contact-text">Hexagon-Dev</span>
       </a>
 
-      <button @click="copy(contacts.git)">
+      <button @click="copy(contacts.git)" aria-label="Copy git url">
         <svg v-if="!contacts.git.copied" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M272 0h124c13 0 25 5 34 14l68 68c9 9 14 21 14 34v220c0 27-21 48-48 48H272c-26 0-48-21-48-48V48c0-26 22-48 48-48zM48 128h144v64H64v256h192v-32h64v48c0 27-21 48-48 48H48c-26 0-48-21-48-48V176c0-26 22-48 48-48z"/></svg>
         <svg v-else fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439 105c12 13 12 33 0 46L183 407a32 32 0 0 1-46 0L9 279a32 32 0 0 1 46-46l105 106 233-234c13-12 33-12 46 0z"/></svg>
       </button>
@@ -70,7 +74,7 @@ function copy(contact) {
         <span class="contact-text">@hexagondev</span>
       </a>
 
-      <button @click="copy(contacts.discord)">
+      <button @click="copy(contacts.discord)" aria-label="Copy discord nickname">
         <svg v-if="!contacts.discord.copied" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M272 0h124c13 0 25 5 34 14l68 68c9 9 14 21 14 34v220c0 27-21 48-48 48H272c-26 0-48-21-48-48V48c0-26 22-48 48-48zM48 128h144v64H64v256h192v-32h64v48c0 27-21 48-48 48H48c-26 0-48-21-48-48V176c0-26 22-48 48-48z"/></svg>
         <svg v-else fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439 105c12 13 12 33 0 46L183 407a32 32 0 0 1-46 0L9 279a32 32 0 0 1 46-46l105 106 233-234c13-12 33-12 46 0z"/></svg>
       </button>
