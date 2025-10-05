@@ -75,6 +75,7 @@ const softSkills = [
       <h3>English <span class="badge">B2</span></h3>
       <h3>Ukrainian <span class="badge">Native</span></h3>
       <h3>Russian <span class="badge">Native</span></h3>
+      <h3>Polish <span class="badge">A1</span></h3>
     </div>
   </section>
 </template>
