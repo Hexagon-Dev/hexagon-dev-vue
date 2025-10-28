@@ -120,6 +120,11 @@ li {
 .about-col > div {
   line-height: 1.75rem;
 }
+.about-desc {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
 .stack {
   grid-row: 2 / 5;
   align-self: baseline;
@@ -342,6 +347,9 @@ li {
   .about-col {
     max-width: 100%;
   }
+  .about-desc {
+    flex-direction: column;
+  }
   .projects-wrap {
     grid-template-columns: 1fr;
   }
@@ -354,6 +362,7 @@ li {
   .pad {
     grid-column: 1 / span 1;
     font-size: 1.75rem;
+    padding: 1rem;
   }
   .block {
     height: auto;

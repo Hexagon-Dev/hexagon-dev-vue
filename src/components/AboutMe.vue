@@ -3,7 +3,7 @@
     <div class="pad" v-animate-on-scroll>
         <h2>About me</h2>
 
-        <div style="display: flex; gap: 1rem; align-items: center">
+        <div class="about-desc">
           <img src="/photo.jpg" alt="Vladyslav Rudakevych" style="width: 180px; border: 1px solid white">
 
           <p style="margin: 0;" class="intro text-light">
@@ -18,7 +18,7 @@
     </div>
 
     <div class="about-col stack" style="margin-bottom: 0">
-      <h2 v-animate-on-scroll>Stack</h2>
+      <h2 v-animate-on-scroll style="margin-bottom: 0">Stack</h2>
 
       <div v-animate-on-scroll>
         <h3>Programming languages:</h3>
