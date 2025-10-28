@@ -75,10 +75,7 @@ li {
   position: relative;
   max-width: 800px;
   grid-column: 1 / span 2;
-  background-color: black;
-  border: 2px solid white;
   margin-bottom: 20px;
-  padding: 1rem;
 }
 
 .block {
@@ -120,6 +117,9 @@ li {
   padding: 16px;
   max-width: 400px;
 }
+.about-col > div {
+  line-height: 1.75rem;
+}
 .stack {
   grid-row: 2 / 5;
   align-self: baseline;
@@ -141,7 +141,6 @@ li {
 .text-light {
   display: block;
   font-weight: 300;
-  margin-bottom: 12px;
 }
 .enter {
   opacity: 1!important;

@@ -1,44 +1,38 @@
-<script setup>
-const softSkills = [
-  'Creative thinking',
-  'Collaboration',
-  'Enthusiasm',
-  'Conflict resolution',
-  'Patience',
-  'Self-confidence',
-  'Rapid',
-];
-</script>
-
 <template>
   <section class="block grid" style="color: white;">
     <div class="pad" v-animate-on-scroll>
-      <h3>Who am I?</h3>
-      <p style="margin: 0;" class="intro">
-        Hello, my name is Vladyslav Rudakevych, I am a professional full-stack developer from Ukraine 🇺🇦 with more than
-        3 years of experience in web-developing, equipped with a diverse and promising skill-set.
-        Able to effectively self-manage various issues, as well as collaborate as part of a productive team.
-        My main responsibility is to develop high-load and user-friendly systems following best practises.
-        Proficient in various frameworks, libraries and embedded systems. I am always engaged in learning new skills.
-      </p>
+        <h2>About me</h2>
+
+        <div style="display: flex; gap: 1rem; align-items: center">
+          <img src="/photo.jpg" alt="Vladyslav Rudakevych" style="width: 180px; border: 1px solid white">
+
+          <p style="margin: 0;" class="intro text-light">
+            Hello, my name is Vladyslav Rudakevych, I am a Full-Stack Developer with
+            {{ new Date().getFullYear() - new Date('2021').getFullYear() }}+ years of experience equipped with a diverse
+            and promising skill-set.
+            Able to effectively self-manage various issues, as well as collaborate as part of a productive team.
+            My main responsibility is to develop high-load and user-friendly systems following best practises.
+            Proficient in various frameworks, libraries and embedded systems. I am always engaged in learning new skills.
+          </p>
+        </div>
     </div>
 
-    <div class="about-col stack">
+    <div class="about-col stack" style="margin-bottom: 0">
       <h2 v-animate-on-scroll>Stack</h2>
 
       <div v-animate-on-scroll>
         <h3>Programming languages:</h3>
-        <span class="text-light">PHP, JS</span>
+        <span class="text-light">PHP, JS, Go, Python</span>
       </div>
 
       <div v-animate-on-scroll>
         <h3>Frontend frameworks:</h3>
-        <span class="text-light">Vue 2, Vue 3, Nuxt, Ionic, Capacitor</span>
+        <span class="text-light">Vue 3/2, Nuxt, Ionic, Capacitor</span>
       </div>
 
       <div v-animate-on-scroll>
         <h3>UI/UX:</h3>
-        <span class="text-light">CSS, SASS, Tailwind CSS, Bootstrap, Buefy, Vuetify, PrimeVue, Quasar</span>
+        <span class="text-light">CSS, SASS, Tailwind CSS, Shadcn, Buefy, Vuetify, PrimeVue, Quasar</span>
       </div>
 
       <div v-animate-on-scroll>
@@ -55,18 +49,13 @@ const softSkills = [
     <div class="about-col" v-animate-on-scroll>
       <h2>Soft Skills</h2>
       <ul class="text-light">
-        <li v-for="skill in softSkills" :key="skill">
-          {{ skill }}
-        </li>
-      </ul>
-    </div>
-
-    <div class="about-col" v-animate-on-scroll>
-      <h2>Principles:</h2>
-      <ul class="text-light">
-        <li v-for="p in ['DRY', 'KISS', 'YAGNI', 'SOLID']" :key="p">
-          {{ p }}
-        </li>
+        <li>Creative thinking</li>
+        <li>Collaboration</li>
+        <li>Enthusiasm</li>
+        <li>Conflict resolution</li>
+        <li>Patience</li>
+        <li>Self-confidence</li>
+        <li>Rapid</li>
       </ul>
     </div>
 
@@ -79,3 +68,5 @@ const softSkills = [
     </div>
   </section>
 </template>
+<script setup lang="ts">
+</script>
