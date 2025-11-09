@@ -61,12 +61,19 @@ li {
 .renderable {
   position: fixed !important;
 }
+.glass-block {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 .pad {
   position: relative;
   max-width: 800px;
   grid-column: 1 / span 2;
-  margin-bottom: 20px;
   padding: 1rem;
 }
 
@@ -159,72 +166,6 @@ li {
   left: 0;
   top: 0;
   transition-duration: .3s;
-}
-.contacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  height: 100vh;
-}
-.contacts > div {
-  height: 64px;
-  margin-bottom: 16px;
-  display: flex;
-}
-.contacts > div > button {
-  background: black;
-  height: 100%;
-  width: 4rem;
-  padding: 1rem;
-  cursor: pointer;
-  transition-duration: .3s;
-  margin-left: 1rem;
-  border: 1px solid #fff;
-  border-radius: .5rem;
-}
-.contacts > div > button:hover {
-  filter: invert();
-}
-.contacts > div > a {
-  border: 1px solid white;
-  display: flex;
-  align-items: center;
-  width: 20rem;
-  text-decoration: none;
-  color: white;
-  transition-duration: .3s;
-  border-radius: .5rem;
-}
-.contacts > div > a:hover {
-  background-color: white;
-  color: black;
-}
-.contacts > div > a:hover .contact-icon {
-  color: white;
-  background-color: black;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-}
-.contact-icon {
-  height: 64px;
-  width: 64px;
-  color: black;
-  background-color: white;
-  padding: 0 16px;
-  border: 1px solid white;
-  border-left: none;
-  transition-duration: .3s;
-  flex: none;
-  border-radius: .5rem 0 0 .5rem;
-}
-.contact-text {
-  padding: 0 16px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  line-height: 20px;
 }
 .logo-container > img {
   width: 100%;
@@ -384,12 +325,5 @@ li {
   }
   .block {
     min-height: auto;
-  }
-  .contacts > div {
-    width: 95%;
-  }
-  .contacts > div > a {
-    width: 100%;
-    overflow: hidden;
   }
 }

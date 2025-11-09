@@ -1,6 +1,4 @@
 <script setup>
-import GlassBlock from "./GlassBlock.vue";
-
 const svgIcons = [
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M320 32c-8 0-16 1-24 4L16 137a24 24 0 0 0 0 46l58 20c-17 26-26 57-26 89v28c0 28-11 58-22 81-7 13-14 26-23 37a16 16 0 0 0 9 26l64 16c4 1 9 0 12-2s7-7 8-11a258 258 0 0 0-16-150v-25c0-30 10-59 28-82 13-15 30-28 49-35l157-62a16 16 0 0 1 12 30l-157 61c-13 5-23 13-32 22l159 58a71 71 0 0 0 48 0l280-101a24 24 0 0 0 0-46L344 36c-8-3-16-4-24-4zM128 408c0 35 86 72 192 72s192-37 192-72l-15-145-142 51a102 102 0 0 1-69 0l-143-51-15 145z"/></svg>',
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M228 469 48 300l-12-12h87c22 0 43-14 51-34l11-26 49 110a25 25 0 0 0 44 1l42-85 2 3c9 19 29 31 50 31h104c-3 4-7 9-12 12L284 469a41 41 0 0 1-56 0zm276-229H372c-3 0-6-2-8-4l-23-47c-4-8-12-13-21-13s-18 5-22 13l-41 83-51-114a24 24 0 0 0-44 1l-32 76c-1 3-4 5-7 5H16l-7 1c-6-16-9-33-9-50v-6A143 143 0 0 1 244 84l12 12 12-12a143 143 0 0 1 244 101v6c0 17-3 33-8 49z"/></svg>',
@@ -43,23 +41,21 @@ const projects = [
     <h2 v-animate-on-scroll style="margin-bottom: 2rem; font-size: 36px;">Projects I worked on</h2>
 
     <div class="projects-wrap">
-      <GlassBlock
+      <div
           v-for="(project, i) in projects"
           :key="i"
           v-animate-on-scroll
           :data-delay="i % 2 === 0 ? 200 : 0"
-          :padding="32"
+          class="project glass-block"
       >
-        <div class="project">
-          <div class="icon-container" v-html="svgIcons[i]" />
+        <div class="icon-container" v-html="svgIcons[i]" />
 
-          <div>
-            <h3>{{ project.title }}</h3>
+        <div>
+          <h3>{{ project.title }}</h3>
 
-            <span style="font-weight: 100">{{ project.description }}</span>
-          </div>
+          <span style="font-weight: 100">{{ project.description }}</span>
         </div>
-      </GlassBlock>
+      </div>
     </div>
   </section>
 </template>
