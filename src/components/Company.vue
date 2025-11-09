@@ -27,7 +27,7 @@ defineProps({
           target="_blank"
           class="btn-link"
         >
-          OPEN SITE
+          Open site
         </a>
       </div>
 

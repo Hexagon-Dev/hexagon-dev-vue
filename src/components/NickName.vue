@@ -1,6 +1,6 @@
 <template>
   <section class="block main">
-    <div :style="[ rotating ? 'opacity: 1;' : 'opacity: .5;' ]" class="renderable" id="renderable"/>
+    <div :style="{ opacity }" class="renderable" id="renderable"/>
     <transition>
       <div v-if="!rotating" class="name-container">
         <h1 class="name">HEXAGON-DEV</h1>
@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue';
 import { WebGLRenderer } from 'three/src/renderers/WebGLRenderer';
 import { PerspectiveCamera } from 'three/src/cameras/PerspectiveCamera';
 import { Scene } from 'three/src/scenes/Scene';
@@ -29,7 +29,24 @@ import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass';
 import { Vector2 } from 'three/src/math/Vector2';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer';
 
+const scrollTop = ref(0);
+
+function onScroll() {
+  scrollTop.value = window.scrollY;
+}
+
+onMounted(() => document.addEventListener('scroll', onScroll));
+onBeforeUnmount(() => document.removeEventListener('scroll', onScroll));
+
 const rotating = ref(false);
+
+const opacity = computed(() => {
+  if (scrollTop.value > 0) {
+    return 0.4;
+  }
+
+  return rotating.value ? 1 : 0.6;
+})
 
 function animate() {
   requestAnimationFrame(animate);
