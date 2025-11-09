@@ -1,9 +1,9 @@
 <template>
   <section class="block grid" style="color: white;">
-    <div class="pad glass-block" v-animate-on-scroll>
+    <div class="glass-block about-me" v-animate-on-scroll>
       <h2>About me</h2>
 
-      <div class="about-desc">
+      <div class="about-me-desc">
         <img src="/photo.jpg" alt="Vladyslav Rudakevych" style="width: 180px; border-radius: 1rem">
 
         <p style="margin: 0;" class="intro text-light">
@@ -17,12 +17,16 @@
       </div>
     </div>
 
-    <div class="stack about-col glass-block" style="margin-bottom: 0; grid-row: 2 / 5; align-self: baseline;" v-animate-on-scroll>
+    <div
+        class="grid-col glass-block stack"
+        style="margin-bottom: 0; grid-row: 2 / 5; align-self: baseline;"
+        v-animate-on-scroll
+    >
       <h2 style="margin-bottom: 0">Stack</h2>
 
       <div>
         <h3>Programming languages:</h3>
-        <span class="text-light">PHP, JS, Go, Python</span>
+        <span class="text-light">Php, Js, Go, Python</span>
       </div>
 
       <div>
@@ -46,7 +50,7 @@
       </div>
     </div>
 
-    <div class="about-col glass-block" v-animate-on-scroll>
+    <div class="grid-col glass-block" v-animate-on-scroll>
       <h2>Soft Skills</h2>
       <ul class="text-light">
         <li>Creative thinking</li>
@@ -59,12 +63,73 @@
       </ul>
     </div>
 
-    <div class="about-col languages glass-block" v-animate-on-scroll>
+    <div class="grid-col glass-block text-light" v-animate-on-scroll>
       <h2>Languages</h2>
-      <h3>English <span class="badge">B2</span></h3>
-      <h3>Ukrainian <span class="badge">Native</span></h3>
-      <h3>Russian <span class="badge">Native</span></h3>
-      <h3>Polish <span class="badge">A1</span></h3>
+      <div>English <span class="badge">B2</span></div>
+      <div>Ukrainian <span class="badge">Native</span></div>
+      <div>Russian <span class="badge">Native</span></div>
+      <div>Polish <span class="badge">A1</span></div>
     </div>
   </section>
 </template>
+
+<style scoped>
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: 24px;
+  align-items: start;
+}
+.grid h2 {
+  position: relative;
+  margin-bottom: 20px;
+}
+.about-me {
+  position: relative;
+  max-width: 800px;
+  grid-column: 1 / span 2;
+  padding: 1rem;
+}
+.about-me-desc {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.grid-col {
+  padding: 1rem;
+  max-width: 400px;
+}
+.grid-col > div { line-height: 1.75rem }
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.intro {
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+.badge {
+  font-size: 16px;
+  border: 2px solid white;
+  padding: 3px 8px;
+  background: white;
+  color: black;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 900px) {
+  .grid {
+    grid-template-columns: auto;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .about-me {
+    grid-column: 1 / span 1;
+    font-size: 1.75rem;
+    padding: 1rem;
+  }
+  .about-me-desc { flex-direction: column }
+  .grid-col { max-width: 100% }
+}
+</style>

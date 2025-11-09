@@ -84,6 +84,7 @@ function copy(contact) {
 
 <style scoped>
 .contacts {
+  position: relative;
   display: flex;
   gap: 1rem;
   flex-direction: column;
@@ -111,9 +112,7 @@ function copy(contact) {
   background-color: white;
   color: black;
 }
-.contacts > div > a:hover .contact-icon {
-  color: black;
-}
+.contacts > div > a:hover .contact-icon { color: black }
 .contact-icon {
   height: 4rem;
   width: 4rem;
@@ -137,20 +136,12 @@ function copy(contact) {
   border: 1px solid #fff;
   border-radius: .5rem;
 }
-.contacts > div > button:hover {
-  background: white;
-}
-.contacts > div > button > svg {
-  transition-duration: .3s;
-}
-.contacts > div > button:hover > svg {
-  filter: invert();
-}
+.contacts > div > button:hover { background: white }
+.contacts > div > button > svg { transition-duration: .3s }
+.contacts > div > button:hover > svg { filter: invert() }
 
 @media only screen and (max-width: 900px) {
-  .contacts > div {
-    width: 95%;
-  }
+  .contacts > div { width: 95% }
   .contacts > div > a {
     width: 100%;
     overflow: hidden;
