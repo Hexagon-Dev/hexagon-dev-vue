@@ -1,14 +1,14 @@
 <script setup>
 const companies = [
   {
-    backgroundColor: '#181A1B',
-    contentColor: 'linear-gradient(90deg, rgb(52, 53, 138) 0%, rgb(0, 117, 149) 100%)',
-    title: 'Natura Supple',
-    link: null,
+    backgroundColor: '#0F172A',
+    contentColor: 'linear-gradient(90deg, rgb(31, 176, 173) 0%, rgb(28, 26, 102) 100%)',
+    title: 'OperoCRM',
+    link: 'https://operocrm.pl',
     post: 'Full-Stack Developer',
     term: '08.2025 - Now',
     responsibilities: 'Maintaining and enhancing the production ERP system, including refactoring existing code. Developing an upgraded SaaS CRM platform using modern technologies.',
-    description: 'Natura Supple is a Polish company specializing in medical supplements. The company also focuses on the development of a SaaS-based ERP system.',
+    description: 'OperoCRM is a comprehensive ERP system designed to streamline business operations. It offers a wide range of features including customer relationship management, inventory management, sales tracking, and financial reporting. The platform is built to be scalable and customizable, catering to the unique needs of businesses across various industries.',
   },
   {
     backgroundColor: '#1f241f',
