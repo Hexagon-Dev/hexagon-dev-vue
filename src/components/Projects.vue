@@ -23,7 +23,7 @@ const projects = [
   {
     title: 'Shop Management',
     description: 'System for managing white-labels, shop products, orders, customers and other.',
-    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="448" height="512" viewBox="0 0 448 512"><path fill="currentColor" d="M0 24C0 11 11 0 24 0h46c22 0 41 13 50 32h411c26 0 46 25 39 50l-41 153c-9 31-37 53-70 53H171l5 29c2 11 12 19 24 19h288a24 24 0 1 1 0 48H200c-35 0-65-25-71-58L77 55c0-4-4-7-7-7H24C11 48 0 37 0 24zm128 440a48 48 0 1 1 96 0 48 48 0 1 1-96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" width="576" height="512" viewBox="0 0 576 512"><path fill="currentColor" d="M0 24C0 11 11 0 24 0h46c22 0 41 13 50 32h411c26 0 46 25 39 50l-41 153c-9 31-37 53-70 53H171l5 29c2 11 12 19 24 19h288a24 24 0 1 1 0 48H200c-35 0-65-25-71-58L77 55c0-4-4-7-7-7H24C11 48 0 37 0 24zm128 440a48 48 0 1 1 96 0 48 48 0 1 1-96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>',
   },
   {
     title: 'Social Network Scheduler',
