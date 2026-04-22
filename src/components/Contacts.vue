@@ -16,6 +16,10 @@ function copy(contact) {
 
   setTimeout(() => contact.copied = false, 1000);
 }
+
+function openLink() {
+  window.open('/Vladyslav Rudakevych CV.pdf', '_blank')
+}
 </script>
 
 <template>
@@ -77,6 +81,17 @@ function copy(contact) {
       <button @click="copy(contacts.discord)" aria-label="Copy discord nickname" class="glass-block">
         <svg v-if="!contacts.discord.copied" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M272 0h124c13 0 25 5 34 14l68 68c9 9 14 21 14 34v220c0 27-21 48-48 48H272c-26 0-48-21-48-48V48c0-26 22-48 48-48zM48 128h144v64H64v256h192v-32h64v48c0 27-21 48-48 48H48c-26 0-48-21-48-48V176c0-26 22-48 48-48z"/></svg>
         <svg v-else fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439 105c12 13 12 33 0 46L183 407a32 32 0 0 1-46 0L9 279a32 32 0 0 1 46-46l105 106 233-234c13-12 33-12 46 0z"/></svg>
+      </button>
+    </div>
+
+    <div v-animate-on-scroll>
+      <a href="/Vladyslav Rudakevych CV.pdf" download="Vladyslav Rudakevych CV.pdf" class="glass-block">
+        <svg class="contact-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M32 160c0-35 29-64 64-64h448c35 0 64 29 64 64zm0 48h576v272c0 35-29 64-64 64H96c-35 0-64-29-64-64zm247 272c21 0 36-19 23-35a80 80 0 0 0-62-29h-64q-38 1-62 29c-13 16 3 35 23 35zm-71-104a56 56 0 1 0 0-112 56 56 0 0 0 0 112m184-104a24 24 0 1 0 0 48h112a24 24 0 1 0 0-48zm0 96a24 24 0 1 0 0 48h112a24 24 0 1 0 0-48z"/></svg>
+        <span class="contact-text">Resume/CV</span>
+      </a>
+
+      <button @click="openLink()" aria-label="Open CV in a new tab" class="glass-block">
+        <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 96c-81 0-145 37-193 81-46 43-78 95-93 131q-4 12 0 24c15 36 47 88 93 131 48 44 112 81 193 81s146-37 193-81c46-43 78-95 93-131q5-12 0-24c-15-36-47-88-93-131-47-44-112-81-193-81M176 320a144 144 0 1 1 288 0 144 144 0 0 1-288 0m144-64a64 64 0 0 1-96 56q-1 17 3 33a96 96 0 1 0 85-121q8 15 8 32"/></svg>
       </button>
     </div>
   </section>
