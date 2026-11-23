@@ -1,8 +1,8 @@
 <script setup>
 const companies = [
   {
-    backgroundColor: '#0F172A',
-    contentColor: 'linear-gradient(90deg, rgb(31, 176, 173) 0%, rgb(28, 26, 102) 100%)',
+    backgroundColor: '#0c0c0c',
+    contentColor: 'linear-gradient(90deg, rgba(52,103,236,.75) 0%, rgba(0,170,83,.75) 50%, rgba(230,242,84,.75) 100%)',
     title: 'OperoCRM',
     link: 'https://operocrm.pl',
     post: 'Full-Stack Developer',
